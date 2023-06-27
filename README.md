@@ -1,9 +1,14 @@
-Install dependencies
-```
-pnpm install
+Install dependencies.
+```js
+$ pnpm install
 ```
 
-Run app.js
+Create your .env file and add your api key.
+```js
+STABLE_DIFFUSION_KEY = "YOUR_API_KEY"
 ```
-node app.js
+
+Run app.js.
+```js
+$ node app.js
 ```
