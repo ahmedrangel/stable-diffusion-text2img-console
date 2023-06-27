@@ -1,5 +1,5 @@
 Install dependencies.
-```js
+```J
 $ pnpm install
 ```
 
@@ -9,6 +9,6 @@ STABLE_DIFFUSION_KEY = "YOUR_API_KEY"
 ```
 
 Run app.js.
-```js
+```J
 $ node app.js
 ```
