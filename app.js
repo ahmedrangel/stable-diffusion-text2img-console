@@ -14,7 +14,7 @@ const start = async () => {
   stdin.once("data", async(prompt) => {
     prompt = prompt.trim();
     const extra_prompt = ", highly detailed, f/1.4, ISO 200, 1/160s, 8K"; // extra prompts for better quality
-    const extra_negative_prompt = ", (((NSFW))), ((unclothed))"; // extra negative prompts for better quality
+    const extra_negative_prompt = ", (((NSFW))), ((unclothed)), poor lighting, unclear, pixelated"; // extra negative prompts for better quality
     const apiUrl = "https://stablediffusionapi.com/api/v3/dreambooth";
     const apiFetch = async () => {
       const options = {
@@ -24,7 +24,7 @@ const start = async () => {
           "key": key,
           "model_id": model_id,
           "prompt": prompt + extra_prompt,
-          "negative_prompt": "duplicate, boring, bad art, (extra fingers), out of frame, mutated hands, mutilated, poorly drawn hands, poorly drawn face, deformed, disfigured, ugly, blurry, bad anatomy, bad proportions, ((extra limbs)), cloned face, skinny, glitchy, (double torso), (double body), ((extra arms)), ((extra hands)), (mangled fingers), missing lips, missing arms, malformed limbs, ugly face, distorted face, extra legs, watermark, out of frame" + extra_negative_prompt,
+          "negative_prompt": "duplicate, boring, bad art, (extra fingers), morbid, out of frame, mutated hands, mutilated, poorly drawn hands, poorly drawn face, deformed, disfigured, ugly, blurry, bad anatomy, bad proportions, ((extra limbs)), cloned face, skinny, glitchy, (double torso), (double body), ((extra arms)), ((extra hands)), (mangled fingers), missing lips, missing arms, malformed limbs, ugly face, distorted face, extra legs, watermark, out of frame" + extra_negative_prompt,
           "width": "1024",
           "height": "1024",
           "samples": "1",
