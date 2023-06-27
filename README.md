@@ -1,3 +1,4 @@
+# Stable Diffusion Text2Img Console
 Install dependencies.
 ```J
 $ pnpm install
