@@ -1,4 +1,6 @@
 # Stable Diffusion Text2Img Console
+A console program that utilizes Stable Diffusion API and a selected AI model to generate images based on user-provided text input.
+## First steps
 Install dependencies.
 ```J
 $ pnpm install
@@ -17,7 +19,11 @@ const model_id = "anything-v5"; // AI model
 
 // ...
 ```
-Run app.js.
+
+## Run program
 ```J
 $ node app.js
 ```
+
+## Details
+Occasionally, it may take some time for the request to be processed. However, the program will continue making periodic calls to the request until it is successful, after which it will print the image URL.
