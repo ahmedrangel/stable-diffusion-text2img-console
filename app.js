@@ -58,7 +58,7 @@ const start = async () => {
         }
       } else {
         console.log("refetching...");
-        await delay(3000);
+        await delay(4000);
         const refetchUrl = `${apiUrl}/fetch/${id}`;
         const options = {
           method: "POST",
