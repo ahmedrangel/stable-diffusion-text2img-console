@@ -24,3 +24,6 @@ const model_id = "anything-v5"; // AI model
 ```J
 $ node app.js
 ```
+
+## Details
+Occasionally, it may take some time for the request to be processed. However, the program will continue making periodic calls to the request until it is successful, after which it will print the image URL.
